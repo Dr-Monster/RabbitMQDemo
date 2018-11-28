@@ -11,6 +11,12 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class CustomerConfig {
+
+    /**
+     * qTest , QUEUE_A , QUEUE_B是不同的通道,接收对应的通道信息
+     * 通道名称与监听的名称必须一致
+     *
+     */
     @Bean
     public Queue queue() {
         return new Queue("qTest");

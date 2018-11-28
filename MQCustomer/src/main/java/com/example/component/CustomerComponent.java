@@ -16,6 +16,7 @@ public class CustomerComponent {
 
 
     /**
+     * 监听指定的通道,必须与config里面配置的通道名称是一样的
      * 监听器监听指定的Queue
      */
     @RabbitListener(queues="qTest")
